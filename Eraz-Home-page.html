@@ -1,0 +1,861 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Eraz-Home-page.css">
+    <title>Yeraz Kids Center/ Home page</title>
+</head>
+<body id="body">
+    <div class="mobile_line"></div>
+    <div class="advertising">
+        <div class="adv_text">
+          <div class="adv_text1">FREE STANDARD SHIPPING ON ORDERS OVER</div>
+          <div class="adv_text2">$50+ FREE RETURNS<b><a href="">SEE DETAILS</a></b></div>
+        </div>
+    </div>
+    <div class="top_numbers">
+      <div class="number_links">
+        <div class="numbers">
+            <a href="tel:+37455502944"><img src="img/tel_icon.svg" alt="">055502944</a>
+            <a href="tel:+37455502944" class="mobile_hide">055502944</a>
+            <a href="tel:+37455502944" class="hide_number">055502944</a>
+            <div class="sm_number"> 
+              <a href="">055502944</a>(Ներքին համար 4)
+            </div>
+            <div class="languages" id="languages" onclick="hide_lang()">Հայերեն <img src="img/arrow_down.svg" alt=""></div>
+            <div class="hide_lang" id="hidelang">
+              <a href="">Русслий</a>
+              <a href="">English</a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <header class="header" id="header">
+      <div class="header_content">
+        <div class="header_items">
+            <img class="logo" id="logo" src="img/logo.svg" alt="">
+            <div class="input">
+              <input type="text" id="input">
+              <div class="search_img" onclick="input()">
+              <img src="img/search.svg" alt="">
+              </div>
+            </div>
+            <img class="buy_logo" src="img/buy.svg" height="26px" alt="">
+            <div>
+            <div class="changing_img" id="change_img">
+              <div class="burger_menu_btn"  onclick="open_menu()"></div>
+            </div>
+            </div>
+        </div>
+        <ul class="header_links" id="header_links">
+           <li><a class="header_items_a" id="header_item1" onclick="hide_link()">Հագուստ<img src="img/arrow_down.svg" alt=""></a></li>
+           <li><a class="header_items_a" id="header_item2" onclick="hide_link()">Կերակրում<img src="img/arrow_down.svg" alt=""></a></li>
+           <li><a class="header_items_a" id="header_item3" onclick="hide_link()">Խաղալիք<img src="img/arrow_down.svg" alt=""></a></li>
+           <li><a class="header_items_a" id="header_item4" onclick="hide_link()">Ճանապարհորդություն<img src="img/arrow_down.svg" alt=""></a></li>
+           <li><a class="header_items_a" id="header_item5" onclick="hide_link()">Խնամք և լոգանք<img src="img/arrow_down.svg" alt=""></a></li>
+           <li id="hide"><a class="header_items_a" id="header_item6" onclick="hide_link()">Մանկական սենյակ<img src="img/arrow_down.svg" alt=""></a></li>
+           <li id="hide"><a class="header_items_a" id="header_item7" onclick="hide_link()">Ապրանքանիշներ</a></li>
+           <li id="more"><a class="header_items_a" id="header_item8" onclick="hide_link()">Ավելին<img src="img/arrow_down.svg" alt=""></a></li>
+        </ul> 
+       </div>
+    </header>
+    <div class="burger_menu none" id="burger">
+      <div class="menu_block">
+        <ul class="block_items" id="burger_menu">
+          <li class="menu_items" id="menu_item1" onclick="secondary_block1()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Հագուստ</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items" id="menu_item2" onclick="secondary_block2()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Կերակրում</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items" id="menu_item3" onclick="secondary_block3()">
+            <div class="secondary_block_heading">
+              <div class="item_name">Խաղալիք</div>
+              <div class="item_arrow"></div>
+            </div>
+            <ul class="secondary_block_list">
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Նորածնային խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Փափուկ խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Երաժշտական խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Մեքենաներ, գնացքներ,<br>կոնստրուկտորներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Տիկնիկներ, տնակներ</div>
+                <div class="item_arrow"></div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu_items" id="menu_item4" onclick="secondary_block4()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Ճանապարհորդություն</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items" id="menu_item5" onclick="secondary_block5()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Խնամք և Լոգանք</div>
+              <div class="item_arrow"></div>
+            </div>  
+          </li>
+          <li class="menu_items" id="menu_item6" onclick="secondary_block6()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Մանկական սենյակ</div>
+              <div class="item_arrow"></div>
+            </div>  
+          </li>
+          <li class="menu_items" id="menu_item7" onclick="secondary_block7()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Ապրանքանիշներ</div>
+              <div class="item_arrow"></div>
+            </div>  
+          </li>
+          <li class="menu_items last_item" id="menu_item8" onclick="secondary_block8()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Հայերեն</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items last_item" id="menu_item9" onclick="secondary_block9()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">USD</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="log_in" id="log_in">
+            <button class="log_in_btn" id="log_in_btn" onclick="log()"><a class="log_in_link" href="">Մուտք / Գրանցում</a></button>
+        </div>
+        <!--LOGGED IN-->
+        <ul class="block_items_logged none" id="logged_bg_menu">
+          <li class="menu_items" id="menu_item" onclick="secondary_block()">
+            <div class="secondary_block_heading"> 
+              <div class="user_name">Narek Avetisyan</div>
+              <div class="item_arrow"></div>
+            </div>
+            <ul class="secondary_block_list">
+              <li class="points">
+                <div class="reward">Reward Points</div>
+                <div class="points_amount">245</div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Իմ պատվերները</div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Հասցեներ</div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Կարգավորումներ</div>
+              </li>
+              <li class="secondary_last_item">
+                <div class="log_out_btn">Log out</div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu_items" id="menu_item10" onclick="secondary_block10()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Հագուստ</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items" id="menu_item11" onclick="secondary_block11()">
+            <div class="secondary_block_heading"> 
+              <div class="item_name">Կերակրում</div>
+              <div class="item_arrow"></div>
+            </div>
+          </li>
+          <li class="menu_items" id="menu_item12" onclick="secondary_block12()">
+            <div class="secondary_block_heading">
+              <div class="item_name">Խաղալիք</div>
+              <div class="item_arrow"></div>
+            </div>
+            <ul class="secondary_block_list">
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Նորածնային խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Փափուկ խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Երաժշտական խաղալիքներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Մեքենաներ, գնացքներ,<br>կոնստրուկտորներ</div>
+                <div class="item_arrow"></div>
+              </li>
+              <li class="secondary_block_items">
+                <div class="secondary_item_name">Տիկնիկներ, տնակներ</div>
+                <div class="item_arrow"></div>
+              </li>
+            </ul>
+          </li>
+          <li class="menu_items" id="menu_item13" onclick="secondary_block13()">
+            <div class="item_name">Ճանապարհորդություն</div>
+            <div class="item_arrow"></div>
+          </li>
+          <li class="menu_items" id="menu_item14" onclick="secondary_block14()">
+            <div class="item_name">Խնամք և Լոգանք</div>
+            <div class="item_arrow"></div>
+          </li>
+          <li class="menu_items" id="menu_item15" onclick="secondary_block15()">
+            <div class="item_name">Մանկական սենյակ</div>
+            <div class="item_arrow"></div>
+          </li>
+          <li class="menu_items" id="menu_item16" onclick="secondary_block16()">
+            <div class="item_name">Ապրանքանիշներ</div>
+            <div class="item_arrow"></div>
+          </li>
+          <li class="menu_items last_item" id="menu_item17" onclick="secondary_block17()">
+            <div class="item_name">Հայերեն</div>
+            <div class="item_arrow"></div>
+          </li>
+          <li class="menu_items last_item" id="menu_item18" onclick="secondary_block18()">
+            <div class="item_name">USD</div>
+            <div class="item_arrow"></div>
+          </li>
+        </ul> 
+      </div>
+    </div>
+    <main class="main">
+      <div class="main_img" >
+        <img src="img/main_img.svg" alt="">
+      </div>
+      <div class="firm_list">
+       <div class="upper_firms"> 
+       <div class="resp"> 
+        <div class="block1">
+          <div class="firm"><img src="img/Chicco.svg" alt=""></div>
+        </div>
+        <div class="block2">
+          <div class="firm"><img src="img/prenatal.svg" alt=""></div>
+        </div>
+       </div>
+       <div class="resp">
+        <div class="block3">
+          <div class="firm"><img src="img/ELC.svg" alt=""></div>
+        </div>
+        <div class="block4">
+          <div class="firm"><img src="img/Benetton.svg" alt=""></div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div class="heading_div">
+       <div class="heading">
+        <h4 class="item_heading"><b>CHICCO Նորածնային պարագաներ</b></h4>
+        <a class="heading_link" href="">բոլորը</a>
+       </div>
+      </div>
+      <!--FIRST LINE-->
+      <div class="card_line_div">
+      <div class="card_line">
+       <div class="left_arrow"> 
+        <img src="img/right_arrow.svg" alt="">
+       </div>
+       <div class="right_arrow">
+        <img src="img/right_arrow.svg" alt="">
+       </div>
+       <div class="card_row">
+        <div class="card_block one">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+          <div class="card">
+            <img src="img/baby_carriage.svg" alt="">
+            <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+            <p class="price">98900դր</p>
+            <div class="rate">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+            </button>
+          </div>
+         </a>
+        </div>
+        <div class="card_block two">
+         <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+          <div class="card">
+            <img src="img/baby_carriage1.svg" alt="">
+              <p class="item_description"><span class="no_slice">CHICCO Կերակրման մանկական աթոռ</span> <span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+            <p class="price">148900</p>
+            <div class="rate">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+            </button>
+            </div> 
+         </a>
+          </div>
+        </div>
+       <div class="card_row">  
+        <div class="card_block three">
+         <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+          <div class="card">
+            <img src="img/baby_carriage2.svg" alt="">
+            <p class="item_description"><span class="no_slice2">CHICCO Կերակրման աթոռ-մահճակալ Baby</span><span class="slice4">&nbsp;Hug 4in1</span></p>
+            <p class="price">188900</p>
+            <div class="rate">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <button class="order_btn" disabled id="first_row3">
+                <div class="order_btn_img"></div>Out of stock
+            </button>
+          </div>
+         </a>
+        </div>
+        <div class="card_block four">
+         <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+          <div class="card">
+            <img src="img/baby_carriage3.svg" alt="">
+            <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+            <p class="price">144900</p>
+            <div class="rate">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/fill_star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+              <img src="img/Star.svg" alt="">
+            </div>
+            <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div> Ավելացնել զամբյուղ
+              </a>
+            </button>
+          </div>
+         </a> 
+        </div>
+       </div>
+      </div>
+     </div>
+      <!--SECOND LINE-->
+      <div class="heading_div">
+      <div class="heading">
+        <h4 class="item_heading"><b>CHICCO Նոր տեսականի</b></h4>
+        <a class="heading_link" href="">բոլորը</a>
+      </div>
+      </div>
+      <div class="card_line_div">
+      <div class="card_line">
+        <div class="left_arrow"> 
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="right_arrow">
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="card_row">
+         <div class="card_block one">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+           <div class="card">
+             <img src="img/baby_carriage.svg" alt="">
+             <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+             <p class="price">98900դր</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+         <div class="card_block two">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage1.svg" alt="">
+             <p class="item_description"><span class="no_slice">CHICCO Կերակրման մանկական աթոռ</span> <span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+             <p class="price">148900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="card_row">  
+         <div class="card_block three">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+           <div class="card">
+             <img src="img/baby_carriage2.svg" alt="">
+             <div class="discount">70%</div>
+             <p class="item_description"><span class="no_slice2">CHICCO Կերակրման աթոռ-մահճակալ Baby</span><span class="slice4">&nbsp;Hug 4in1</span></p>
+             <div class="prices">
+               <p class="price">188900</p>
+               <p class="old_price">98900</p>
+             </div>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn" disabled id="second_row3">
+                <div class="order_btn_img"></div>Առկա չէ
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block four">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+           <div class="card">
+             <img src="img/baby_carriage3.svg" alt="">
+             <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+             <p class="price">144900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+       <!--LINE THREE-->
+       <div class="heading_div">
+       <div class="heading">
+        <h4 class="item_heading"><b>PRENATAL That's Love</b></h4>
+        <a class="heading_link" href="">բոլորը</a>
+      </div>
+      </div>
+      <div class="card_line_div">
+       <div class="card_line">
+        <div class="left_arrow"> 
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="right_arrow">
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="card_row">
+         <div class="card_block one">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage.svg" alt="">
+             <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+             <p class="price">98900դր</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch"> 
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+         <div class="card_block two">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+           <div class="card">
+             <img src="img/baby_carriage1.svg" alt="">
+             <div class="discount">50%</div>
+             <p class="item_description"><span class="no_slice">CHICCO Կերակրման մանկական աթոռ</span><span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+             <div class="prices">
+              <p class="price">148900</p>
+              <p class="old_price">98900</p>
+            </div>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="card_row">  
+         <div class="card_block three">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage2.svg" alt="">
+             <p class="item_description"><span class="no_slice2">CHICCO Կերակրման աթոռ-մահճակալ Baby</span><span class="slice4">&nbsp;Hug 4in1</span></p>
+             <p class="price">188900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block four">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage3.svg" alt="">
+             <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+             <p class="price">144900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+       <!--LINE FOUR-->
+       <div class="heading_div">
+       <div class="heading">
+        <h4  class="item_heading"><b>CHICCO Natural Sensation</b></h4>
+        <a class="heading_link" href="">բոլորը</a>
+      </div>
+      </div>
+      <div class="card_line_div">
+       <div class="card_line">
+        <div class="left_arrow"> 
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="right_arrow">
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="card_row">
+         <div class="card_block one">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage.svg" alt="">
+             <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+             <p class="price">98900դր</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block two">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage1.svg" alt="">
+             <p class="item_description"><span class="no_slice">CHICCO Կերակրման մանկական աթոռ</span> <span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+             <p class="price">148900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+        </div>
+        <div class="card_row">  
+         <div class="card_block three">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html">
+           <div class="card">
+             <img src="img/baby_carriage2.svg" alt="">
+             <p class="item_description"><span class="no_slice2">CHICCO Կերակրման աթոռ-մահճակալ Baby</span><span class="slice4">&nbsp;Hug 4in1</span></p>
+             <p class="price">188900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block four">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage3.svg" alt="">
+             <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+             <p class="price">144900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+        </div>
+       </div>
+      </div>
+       <!--LINE FIVE-->
+       <div class="heading_div">
+       <div class="heading">
+        <h4  class="item_heading"><b>Մահճակալներ</b></h4>
+        <a class="heading_link" href="">բոլորը</a>
+      </div>
+      </div>
+      <div class="card_line_div">
+       <div class="card_line">
+        <div class="left_arrow"> 
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="right_arrow">
+         <img src="img/right_arrow.svg" alt="">
+        </div>
+        <div class="card_row">
+         <div class="card_block one">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage.svg" alt="">
+             <p class="item_description">CHICCO Զբոսասայլակ Trolley Me 0+</p>
+             <p class="price">98900դր</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch"> 
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block two">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.htmll"> 
+           <div class="card">
+             <img src="img/baby_carriage1.svg" alt="">
+             <p class="item_description"><span class="no_slice">CHICCO Կերակրման մանկական աթոռ</span><span class="slice1">&nbsp;Polly</span><span class="slice2">&nbsp;Magic<span class="slice3">&nbsp;Relax</span></p>
+             <p class="price">148900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+        </div>
+        <div class="card_row">  
+         <div class="card_block three">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage2.svg" alt="">
+             <p class="item_description"><span class="no_slice2">CHICCO Կերակրման աթոռ-մահճակալ Baby</span><span class="slice4">&nbsp;Hug 4in1</span></p>
+             <p class="price">188900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+         <div class="card_block four">
+          <a href="file:///C:/Users/User/Desktop/Karen/Eraz/Eraz-Product-page/Eraz-Product-page.html"> 
+           <div class="card">
+             <img src="img/baby_carriage3.svg" alt="">
+             <p class="item_description">CHICCO Մեքենայի նստատեղ Akita Ombra 1/2/3</p>
+             <p class="price">144900</p>
+             <div class="rate">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/fill_star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+               <img src="img/Star.svg" alt="">
+             </div>
+             <button class="order_btn">
+              <a class="btn_link" href="https://github.com/KarenManuch">
+                <div class="order_btn_img"></div>Ավելացնել զամբյուղ
+              </a>
+             </button>
+           </div>
+          </a> 
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="heading_div">
+      <div class="bottom_heading">
+        <h4 class="firms_heading"><b>Ապրանքանիշներ</b></h4>
+      </div>
+      </div>
+      <div class="firms">
+       <div class="bottom_firms"> 
+        <div class="firm_row">
+          <img class="firm_img1" src="img/Chicco.svg" alt="">
+          <img class="firm_img2" src="img/prenatal.svg" alt="">
+        </div>
+        <div class="firm_row">
+          <img class="firm_img3" src="img/ELC.svg" alt="">
+          <img class="firm_img4" src="img/Benetton.svg" alt="">
+        </div>
+       </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_content">
+        <div class="info">
+          <ul class="about top">
+            <li><a class="info_text" href=""><b>Մեր մասին</b></a></li>
+            <li><a class="info_text" href="">ԵՐԱԶ նվեր քարտ</a></li>
+            <li><a class="info_text" href="">Առաքման պայմանները</a></li>
+            <li><a class="info_text" href="">Վերադարձ և փոխանակում</a></li>
+            <li><a class="info_text" href="">Մեր խանութ սրահների հասցեները</a></li>
+            <li><a class="info_text last" href="">Գաղտնիության քաղաքականություն</a></li>
+          </ul>
+        </div>
+        <div class="info">
+          <ul class="about">
+            <li><a class="info_text" href="">Հասցե՝<b> Ազատության պողոտա 27/3</b></a></li>
+            <li><a class="info_text" href="">Հեռ․՝<b> 055 50 29 44, 033 50 29 44</b></a></li>
+            <li><a class="info_text" href=""><b> 012 30 33 03 </b>(Ներքին համար 4)</a></li>
+            <li><a class="info_text last" href="">Էլ․ հասցե՝<b> info@yerazkids.am</b></a></li>
+            <li>
+             <div class="chat"> 
+              <a href=""><img src="img/facebook.svg" alt=""></a>
+              <a href=""><img src="img/instagram.svg" alt=""></a>
+              <a href=""><img src="img/youtube.svg" alt=""></a>
+             </div>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <ul class="about last_div">
+            <li><a class="info_text" href=""><b>Chicco </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text" href=""><b>Prenatal </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text" href=""><b>Benetton </b>  չափսերի ուղեցույց</a></li>
+            <li><a class="info_text last" href=""><b>Ընդհանուր </b>  չափսերի ուղեցույց</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright_text">© 2021 Բոլոր իրավունքները պաշտպանված են:</div>
+      <div class="credit_card">
+        <img src="img/arca.svg" alt="">
+        <img src="img/visa.svg" alt="">
+        <img src="img/master_card.svg" alt="">
+        <img src="img/cash.svg" alt="">
+        <img src="img/idram.svg" alt="">
+      </div>
+    </footer>
+<script src="Eraz-Home-page.js"></script>
+</body>
+</html>
